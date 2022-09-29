@@ -1,0 +1,3 @@
+$select=$pdo->prepare("select primaryTitle,  runtimeMinutes, averageRating, genres from movies, ratings GROUP BY primaryTitle ORDER BY runtimeMinutes DESC LIMIT 10");
+            
+$select->execute();
